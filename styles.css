@@ -1,0 +1,158 @@
+/* #2ad4ff, #ff04ff, #f0f8ff */
+
+:root {
+    --bg-color: linear-gradient(135deg, #ff04ff, #2ad4ff);
+    --bg-card: linear-gradient(90deg, #ff04ff, #2ad4ff);
+    --font-color: #f0f8ff; 
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: var(--bg-color);
+    background-repeat: no-repeat;
+    color: var(--font-color);
+}
+
+
+select {
+    width: fit-content;
+    margin: 0.5rem auto 0.5rem 80vw;
+    padding: 0.2rem;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    
+    background-color: transparent;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.card-container {
+    height: 100vh;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    width: 80%;
+
+    background: var(--bg-card);
+    border-radius: 1rem;
+    padding: 1.2rem;
+
+    max-width: 700px;
+    min-height: 55%;
+    max-height: fit-content;
+}
+
+
+/* style for en card */
+
+.card-en.date h1 {
+    font-weight: 700;
+    font-size: 8rem;
+}
+
+.card-en.day-month-year {
+    flex-direction: column;
+}
+
+.card-en.day-month-year div {
+    margin-bottom: 0.8rem;
+}
+
+.card-en.time-greet {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    grid-column: span 2;
+    gap: 0.2rem;
+}
+
+.card-en .time {
+    display: flex;
+    width: 70%;
+    justify-content: space-evenly;
+}
+
+.hh, .mm, .ss {
+    height: 30px;
+    width: 30px;
+}
+
+.greet p {
+    font-weight: 600;
+}
+
+
+/* style for de card */
+
+.card-de.date-day-month {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 0.2rem;
+}
+
+.card-de.greet {
+    grid-column: span 2;
+}
+
+.card-de.time h1 {
+    font-size: 4rem;
+}
+
+.footer p {
+    font-weight: 100;
+    font-size: 0.7rem;
+    padding: 0.9rem;
+    text-align: center;
+
+}
+
+/* center div using flex */
+.center-div-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* flex direction column */
+.flex-direction-column {
+    flex-direction: column;
+}
+
+/* font-weight 400 */
+.font-weight-400 h5 {
+    font-weight: 400;
+}
+
+/* Animation  */
+
+/* .blink {
+    animation: blink-animation 1s ease-in-out infinite;
+}
+
+
+@keyframes blink-animation {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+} */
